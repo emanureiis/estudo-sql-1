@@ -1,9 +1,9 @@
-select * from tabela_de_vendedores;
-select * from notas_fiscais;
 
+/*-------------------- INNER JOIN  --------------------*/
 /* NOTAS FISCAIS DE CADA VENDEDOR */
 /* Informando quais tabelas queremos associar a partir de um campo comum */
-select * from tabela_de_vendedores A /* Informando tabela A */
+select *
+from tabela_de_vendedores A /* Informando tabela A */
 inner join  notas_fiscais B /* Informando tabela B */
 on A.MATRICULA = B.MATRICULA; /* Campo incomum entre as tableas */
 
